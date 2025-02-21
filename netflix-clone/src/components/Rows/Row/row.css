@@ -1,0 +1,49 @@
+.row {
+  margin: 0; /* Remove any margin */
+  padding-left: 20px; /* Adjust padding to add space from the left if needed */
+
+  color: white;
+  display: block; /* Change flexbox to block layout for vertical alignment */
+  overflow-x: auto; /* Enable horizontal scrolling for posters */
+  overflow-y: hidden; /* Hide vertical overflow */
+  white-space: nowrap; /* Prevent line breaks */
+  background-color: black;
+}
+
+.row__title {
+  margin-bottom: 10px; /* Add some space between the title and posters */
+  color: white;
+}
+
+.row__posters {
+  display: flex; /* Use flexbox for horizontal alignment */
+  overflow-x: auto; /* Enable horizontal scrolling for posters */
+  overflow-y: hidden; /* Hide vertical overflow */
+  white-space: nowrap; /* Prevent line breaks */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.row__poster {
+  width: auto; /* Adjust width as needed */
+  object-fit: contain;
+  height: 100px; /* Set a consistent height */
+  transition: transform 450ms;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.row__poster::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__posterLarge {
+  max-height: 250px;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}

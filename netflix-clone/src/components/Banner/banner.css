@@ -1,5 +1,5 @@
 .banner {
-  margin-top: -10vh;
+  margin-top: 0vh;
   height: 80vh;
   margin-bottom: -80px;
   color: white;
@@ -45,7 +45,7 @@
   transition: a110.2s;
 }
 .banner__fadeBottom {
-  height: 40vh;
+  height: 80vh;
   background-image: linear-gradient(
     180deg,
     transparent,
